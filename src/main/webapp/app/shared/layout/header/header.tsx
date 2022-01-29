@@ -58,7 +58,7 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
           </ul>
           <ul className="navbar-nav navbar-nav-right">
             <Dropdown as="li" className="nav-item d-none d-lg-block">
-              <button className="nav-link btn btn-success create-new-button no-caret">????????</button>
+              <button className="nav-link btn btn-success create-new-button no-caret">+ Добавить</button>
             </Dropdown>
             <Dropdown as="li" className="nav-item border-left">
               <Dropdown.Toggle as="a" className="nav-link count-indicator cursor-pointer">
@@ -69,17 +69,13 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
             <Dropdown as="li" className="nav-item">
               <Dropdown.Toggle as="a" className="nav-link cursor-pointer no-caret">
                 <div className="navbar-profile">
-                  <p className="mb-0 d-none d-sm-block navbar-profile-name">
-                    <Trans>Henry Klein</Trans>
-                  </p>
+                  <p className="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
                   <i className="mdi mdi-menu-down d-none d-sm-block" />
                 </div>
               </Dropdown.Toggle>
 
               <Dropdown.Menu className="navbar-dropdown preview-list navbar-profile-dropdown-menu">
-                <h6 className="p-3 mb-0">
-                  <Trans>Profile</Trans>
-                </h6>
+                <h6 className="p-3 mb-0">Profile</h6>
                 <Dropdown.Divider />
                 <Dropdown.Item href="!#" className="preview-item">
                   <div className="preview-thumbnail">
@@ -88,9 +84,7 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
                     </div>
                   </div>
                   <div className="preview-item-content">
-                    <p className="preview-subject mb-1">
-                      <Trans>Settings</Trans>
-                    </p>
+                    <p className="preview-subject mb-1">Settings</p>
                   </div>
                 </Dropdown.Item>
                 <Dropdown.Divider />
@@ -101,15 +95,11 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
                     </div>
                   </div>
                   <div className="preview-item-content">
-                    <p className="preview-subject mb-1">
-                      <Trans>Log Out</Trans>
-                    </p>
+                    <p className="preview-subject mb-1">Log Out</p>
                   </div>
                 </Dropdown.Item>
                 <Dropdown.Divider />
-                <p className="p-3 mb-0 text-center">
-                  <Trans>Advanced settings</Trans>
-                </p>
+                <p className="p-3 mb-0 text-center">Advanced settings</p>
               </Dropdown.Menu>
             </Dropdown>
           </ul>
