@@ -10689,12 +10689,11 @@ a.text-dark:hover {
 }
 @font-face {
   font-family: Material Design Icons;
-  src: url(/demo/corona-react-free/template/demo_1/preview/static/media/materialdesignicons-webfont.a32fa1f2.eot);
-  src: url(/demo/corona-react-free/template/demo_1/preview/static/media/materialdesignicons-webfont.a32fa1f2.eot?#iefix&v=4.4.95)
-      format('embedded-opentype'),
-    url(/demo/corona-react-free/template/demo_1/preview/static/media/materialdesignicons-webfont.7ec5dab7.woff2) format('woff2'),
-    url(/demo/corona-react-free/template/demo_1/preview/static/media/materialdesignicons-webfont.a0d13d16.woff) format('woff'),
-    url(/demo/corona-react-free/template/demo_1/preview/static/media/materialdesignicons-webfont.3ac50b5b.ttf) format('truetype');
+  src: url(../static/media/materialdesignicons-webfont.a32fa1f2.eot);
+  src: url(../static/media/materialdesignicons-webfont.a32fa1f2.eot?#iefix&v=4.4.95) format('embedded-opentype'),
+    url(../static/media/materialdesignicons-webfont.7ec5dab7.woff2) format('woff2'),
+    url(../static/media/materialdesignicons-webfont.a0d13d16.woff) format('woff'),
+    url(../static/media/materialdesignicons-webfont.3ac50b5b.ttf) format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -27968,15 +27967,15 @@ ul li {
   height: 100%;
 }
 .auth .login-half-bg {
-  background: url(/demo/corona-react-free/template/demo_1/preview/static/media/login-bg.2eeb0447.jpg);
+  background: url(../static/media/login-bg.2eeb0447.jpg);
   background-size: cover;
 }
 .auth .register-half-bg {
-  background: url(/demo/corona-react-free/template/demo_1/preview/static/media/register-bg.2ccde6b9.jpg);
+  background: url(../static/media/register-bg.2ccde6b9.jpg);
   background-size: cover;
 }
 .auth.lock-full-bg {
-  background: url(/demo/corona-react-free/template/demo_1/preview/static/media/lockscreen-bg.0d7ef366.jpg);
+  background: url(../static/media/lockscreen-bg.0d7ef366.jpg);
   background-size: cover;
 }
 .auth .lock-profile-img {

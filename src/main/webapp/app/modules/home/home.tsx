@@ -37,7 +37,7 @@ export class Home extends React.Component<IHomeProp> {
                     </div>
                   </div>
                   <div className="col-3">
-                    <div className="icon icon-box-success ">
+                    <div className="icon icon-box-success">
                       <span className="mdi mdi-arrow-top-right icon-item" />
                     </div>
                   </div>
