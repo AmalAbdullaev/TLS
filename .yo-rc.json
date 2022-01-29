@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.app.tls",
+      "nativeLanguage": "ru"
+    },
+    "jhipsterVersion": "6.0.0",
+    "applicationType": "monolith",
+    "baseName": "TLS",
+    "packageName": "com.app.tls",
+    "packageFolder": "com/app/tls",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YWM3YmM3OTQ1MDZhNmYxNjBmY2Y3YzEzMzRmNzRiN2RhODgwOGVmZWVmM2Y1ZGVhNmZlN2Q5NWY5NTk0MWZiMTczMDk2NDk3Yjk3MDE1YzQzZGM2MjBmODVkN2M2YzY1MWZjNWQ0MjRmNDgzNmEwNDBlZDNkOGIyYjBjZThkNzQ=",
+    "clientFramework": "react",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "ru",
+    "languages": ["ru"]
+  }
+}
