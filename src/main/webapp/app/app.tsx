@@ -50,11 +50,11 @@ export class App extends React.Component<IAppProps> {
             />
           </ErrorBoundary>
           <div className="container-fluid view-container" id="app-view-container">
-            <Card className="jh-card">
+            <div>
               <ErrorBoundary>
                 <AppRoutes />
               </ErrorBoundary>
-            </Card>
+            </div>
             <Footer />
           </div>
         </div>
