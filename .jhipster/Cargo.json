@@ -1,0 +1,111 @@
+{
+    "name": "Cargo",
+    "fields": [
+        {
+            "fieldName": "iDCargo",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength",
+                "minlength",
+                "required"
+            ],
+            "fieldValidateRulesMaxlength": 10,
+            "fieldValidateRulesMinlength": 10
+        },
+        {
+            "fieldName": "iDNakladnoy",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "iDGruza",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength",
+                "minlength",
+                "required"
+            ],
+            "fieldValidateRulesMaxlength": 10,
+            "fieldValidateRulesMinlength": 10
+        },
+        {
+            "fieldName": "massa",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "tekushiyPunkt",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "naznacheniyPunkt",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "konechniyPunkt",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "klient",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "telephoneKlienta",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dlinaPuti",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dataPribitiya",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "dataOtpravki",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "prioritet",
+            "fieldType": "Prioritet",
+            "fieldValues": "VISOKIY,SREDNIY,NIZKIY"
+        },
+        {
+            "fieldName": "vremyaPuti",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "Status",
+            "fieldValues": "NOVAYA,VIPOLNYAETSA,VIPOLNENO"
+        },
+        {
+            "fieldName": "opisanie",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 300
+        },
+        {
+            "fieldName": "chrupkiy",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "otvetstveniy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "telephoneOtv",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20220129174504",
+    "entityTableName": "cargo",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

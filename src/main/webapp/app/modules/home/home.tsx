@@ -19,88 +19,90 @@ export class Home extends React.Component<IHomeProp> {
   render() {
     const { account } = this.props;
     return (
-      <Row>
-        <Col md="9">
-          <h2>
-            <Translate contentKey="home.title">Welcome, Java Hipster!</Translate>
-          </h2>
-          <p className="lead">
-            <Translate contentKey="home.subtitle">This is your homepage</Translate>
-          </p>
-          {account && account.login ? (
-            <div>
-              <Alert color="success">
-                <Translate contentKey="home.logged.message" interpolate={{ username: account.login }}>
-                  You are logged in as user {account.login}.
-                </Translate>
-              </Alert>
+      <div>
+        <div className="row">
+          <div className="col-xl-3 col-sm-6 grid-margin stretch-card">
+            <div className="card">
+              <div className="card-body">
+                <div className="row">
+                  <div className="col-9">
+                    <div className="d-flex align-items-center align-self-start">
+                      <h3 className="mb-0">$12.34</h3>
+                      <p className="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
+                    </div>
+                  </div>
+                  <div className="col-3">
+                    <div className="icon icon-box-success ">
+                      <span className="mdi mdi-arrow-top-right icon-item" />
+                    </div>
+                  </div>
+                </div>
+                <h6 className="text-muted font-weight-normal">Potential growth</h6>
+              </div>
             </div>
-          ) : (
-            <div>
-              <Alert color="warning">
-                <Translate contentKey="global.messages.info.authenticated.prefix">If you want to </Translate>
-                <Link to="/login" className="alert-link">
-                  <Translate contentKey="global.messages.info.authenticated.link"> sign in</Translate>
-                </Link>
-                <Translate contentKey="global.messages.info.authenticated.suffix">
-                  , you can try the default accounts:
-                  <br />- Administrator (login=&quot;admin&quot; and password=&quot;admin&quot;)
-                  <br />- User (login=&quot;user&quot; and password=&quot;user&quot;).
-                </Translate>
-              </Alert>
-
-              <Alert color="warning">
-                <Translate contentKey="global.messages.info.register.noaccount">You do not have an account yet?</Translate>&nbsp;
-                <Link to="/register" className="alert-link">
-                  <Translate contentKey="global.messages.info.register.link">Register a new account</Translate>
-                </Link>
-              </Alert>
+          </div>
+          <div className="col-xl-3 col-sm-6 grid-margin stretch-card">
+            <div className="card">
+              <div className="card-body">
+                <div className="row">
+                  <div className="col-9">
+                    <div className="d-flex align-items-center align-self-start">
+                      <h3 className="mb-0">$17.34</h3>
+                      <p className="text-success ml-2 mb-0 font-weight-medium">+11%</p>
+                    </div>
+                  </div>
+                  <div className="col-3">
+                    <div className="icon icon-box-success">
+                      <span className="mdi mdi-arrow-top-right icon-item" />
+                    </div>
+                  </div>
+                </div>
+                <h6 className="text-muted font-weight-normal">Revenue current</h6>
+              </div>
             </div>
-          )}
-          <p>
-            <Translate contentKey="home.question">If you have any question on JHipster:</Translate>
-          </p>
-
-          <ul>
-            <li>
-              <a href="https://www.jhipster.tech/" target="_blank" rel="noopener noreferrer">
-                <Translate contentKey="home.link.homepage">JHipster homepage</Translate>
-              </a>
-            </li>
-            <li>
-              <a href="http://stackoverflow.com/tags/jhipster/info" target="_blank" rel="noopener noreferrer">
-                <Translate contentKey="home.link.stackoverflow">JHipster on Stack Overflow</Translate>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" rel="noopener noreferrer">
-                <Translate contentKey="home.link.bugtracker">JHipster bug tracker</Translate>
-              </a>
-            </li>
-            <li>
-              <a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer">
-                <Translate contentKey="home.link.chat">JHipster public chat room</Translate>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/java_hipster" target="_blank" rel="noopener noreferrer">
-                <Translate contentKey="home.link.follow">follow @java_hipster on Twitter</Translate>
-              </a>
-            </li>
-          </ul>
-
-          <p>
-            <Translate contentKey="home.like">If you like JHipster, do not forget to give us a star on</Translate>{' '}
-            <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer">
-              Github
-            </a>
-            !
-          </p>
-        </Col>
-        <Col md="3" className="pad">
-          <span className="hipster rounded" />
-        </Col>
-      </Row>
+          </div>
+          <div className="col-xl-3 col-sm-6 grid-margin stretch-card">
+            <div className="card">
+              <div className="card-body">
+                <div className="row">
+                  <div className="col-9">
+                    <div className="d-flex align-items-center align-self-start">
+                      <h3 className="mb-0">$12.34</h3>
+                      <p className="text-danger ml-2 mb-0 font-weight-medium">-2.4%</p>
+                    </div>
+                  </div>
+                  <div className="col-3">
+                    <div className="icon icon-box-danger">
+                      <span className="mdi mdi-arrow-bottom-left icon-item" />
+                    </div>
+                  </div>
+                </div>
+                <h6 className="text-muted font-weight-normal">Daily Income</h6>
+              </div>
+            </div>
+          </div>
+          <div className="col-xl-3 col-sm-6 grid-margin stretch-card">
+            <div className="card">
+              <div className="card-body">
+                <div className="row">
+                  <div className="col-9">
+                    <div className="d-flex align-items-center align-self-start">
+                      <h3 className="mb-0">$31.53</h3>
+                      <p className="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
+                    </div>
+                  </div>
+                  <div className="col-3">
+                    <div className="icon icon-box-success ">
+                      <span className="mdi mdi-arrow-top-right icon-item" />
+                    </div>
+                  </div>
+                </div>
+                <h6 className="text-muted font-weight-normal">Expense current</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     );
   }
 }

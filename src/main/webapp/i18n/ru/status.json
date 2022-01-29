@@ -1,0 +1,10 @@
+{
+  "tlsApp": {
+    "Status": {
+      "null": "",
+      "NOVAYA": "NOVAYA",
+      "VIPOLNYAETSA": "VIPOLNYAETSA",
+      "VIPOLNENO": "VIPOLNENO"
+    }
+  }
+}

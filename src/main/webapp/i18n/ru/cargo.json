@@ -1,0 +1,39 @@
+{
+  "tlsApp": {
+    "cargo": {
+      "home": {
+        "title": "Cargos",
+        "createLabel": "Создать новый Cargo",
+        "createOrEditLabel": "Создать или отредактировать Cargo"
+      },
+      "created": "Новый Cargo создан с идентификатором {{ param }}",
+      "updated": "Cargo обновлен с идентификатором {{ param }}",
+      "deleted": "Cargo удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Cargo {{ id }}?"
+      },
+      "detail": {
+        "title": "Cargo"
+      },
+      "iDCargo": "I D Cargo",
+      "iDNakladnoy": "I D Nakladnoy",
+      "iDGruza": "I D Gruza",
+      "massa": "Massa",
+      "tekushiyPunkt": "Tekushiy Punkt",
+      "naznacheniyPunkt": "Naznacheniy Punkt",
+      "konechniyPunkt": "Konechniy Punkt",
+      "klient": "Klient",
+      "telephoneKlienta": "Telephone Klienta",
+      "dlinaPuti": "Dlina Puti",
+      "dataPribitiya": "Data Pribitiya",
+      "dataOtpravki": "Data Otpravki",
+      "prioritet": "Prioritet",
+      "vremyaPuti": "Vremya Puti",
+      "status": "Status",
+      "opisanie": "Opisanie",
+      "chrupkiy": "Chrupkiy",
+      "otvetstveniy": "Otvetstveniy",
+      "telephoneOtv": "Telephone Otv"
+    }
+  }
+}

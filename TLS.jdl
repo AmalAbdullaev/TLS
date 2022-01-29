@@ -1,0 +1,32 @@
+entity Cargo {
+    IDCargo String maxlength(10) minlength(10) required
+    IDNakladnoy Integer,
+    IDGruza String maxlength(10) minlength(10) required,
+    massa Integer,
+    tekushiyPunkt String,
+    naznacheniyPunkt String,
+    konechniyPunkt String,
+    klient String,
+    telephoneKlienta String,
+    dlinaPuti Integer,
+    dataPribitiya ZonedDateTime,
+    dataOtpravki ZonedDateTime,
+    prioritet Prioritet,
+    vremyaPuti Integer,
+    status Status,
+    opisanie String maxlength(300),
+    chrupkiy Boolean,
+    otvetstveniy String,
+    telephoneOtv String
+}
+
+enum Prioritet {
+    VISOKIY, SREDNIY, NIZKIY
+}
+
+enum Status {
+	NOVAYA, VIPOLNYAETSA, VIPOLNENO
+}
+
+paginate Cargo with pagination
+service all with serviceImpl except Cargo
