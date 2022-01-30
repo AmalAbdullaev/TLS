@@ -63,7 +63,7 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
             {isAuthenticated && (
               <Dropdown as="li" className="nav-item d-none d-lg-block">
                 <Link to="/entity/cargo" className="nav-link btn btn-success create-new-button no-caret">
-                  + Добавить
+                  + Добавить заявку
                 </Link>
               </Dropdown>
             )}

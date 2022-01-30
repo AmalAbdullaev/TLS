@@ -2,16 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link, RouteComponentProps } from 'react-router-dom';
 import { Button, Col, Row, Table } from 'reactstrap';
+import moment from 'moment';
+import cs from 'classnames';
 // tslint:disable-next-line:no-unused-variable
-import {
-  Translate,
-  ICrudGetAllAction,
-  TextFormat,
-  getSortState,
-  IPaginationBaseState,
-  getPaginationItemsNumber,
-  JhiPagination
-} from 'react-jhipster';
+import { Translate, getSortState, IPaginationBaseState, getPaginationItemsNumber, JhiPagination } from 'react-jhipster';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { IRootState } from 'app/shared/reducers';
@@ -68,8 +62,80 @@ export class Cargo extends React.Component<ICargoProps, ICargoState> {
             <Translate contentKey="tlsApp.cargo.home.createLabel">Create new Cargo</Translate>
           </Link>
         </h2>
-        <div className="table-responsive">
-          <Table responsive>
+        <div>
+          <div className="row ">
+            <div className="col-12 grid-margin">
+              <div className="card">
+                <div className="card-body">
+                  <div>
+                    <table className="table">
+                      <thead>
+                        <tr>
+                          <th>
+                            <Translate contentKey="tlsApp.cargo.iDCargo">ID Cargo</Translate> <FontAwesomeIcon icon="sort" />
+                          </th>
+                          <th>
+                            <Translate contentKey="tlsApp.cargo.iDNakladnoy">I D Nakladnoy</Translate> <FontAwesomeIcon icon="sort" />
+                          </th>
+                          <th>
+                            <Translate contentKey="tlsApp.cargo.iDGruza">I D Gruza</Translate> <FontAwesomeIcon icon="sort" />
+                          </th>
+                          <th>
+                            <Translate contentKey="tlsApp.cargo.massa">Massa</Translate> <FontAwesomeIcon icon="sort" />
+                          </th>
+                          <th>
+                            <Translate contentKey="tlsApp.cargo.tekushiyPunkt">Tekushiy Punkt</Translate> <FontAwesomeIcon icon="sort" />
+                          </th>
+                          <th>
+                            <Translate contentKey="tlsApp.cargo.dataOtpravki">Data Otpravki</Translate> <FontAwesomeIcon icon="sort" />
+                          </th>
+                          <th>
+                            <Translate contentKey="tlsApp.cargo.dataPribitiya">Data Pribitiya</Translate> <FontAwesomeIcon icon="sort" />
+                          </th>
+                          <th>
+                            <Translate contentKey="tlsApp.cargo.status">Status</Translate> <FontAwesomeIcon icon="sort" />
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {cargoList.map((cargo, i) => (
+                          <tr key={`entity-${i}`}>
+                            <td>{cargo.iDCargo}</td>
+                            <td>{cargo.iDNakladnoy}</td>
+                            <td>{cargo.iDGruza}</td>
+                            <td>{cargo.massa}</td>
+                            <td>{cargo.tekushiyPunkt}</td>
+                            <td>{moment(cargo.dataOtpravki.toString()).format('MMMM DD YYYY')}</td>
+                            <td>{moment(cargo.dataPribitiya.toString()).format('MMMM DD YYYY')}</td>
+                            <td>
+                              <div className={cs('badge', cargo.status === 'NOVAYA' && 'badge-outline-success')}>{cargo.status}</div>
+                            </td>
+                            <td className="text-right">
+                              <div className="btn-group flex-btn-group-container">
+                                <Button tag={Link} to={`${match.url}/${cargo.id}/edit`} color="primary" size="sm">
+                                  <FontAwesomeIcon icon="pencil-alt" />{' '}
+                                  <span className="d-none d-md-inline">
+                                    <Translate contentKey="entity.action.edit">Edit</Translate>
+                                  </span>
+                                </Button>
+                                <Button tag={Link} to={`${match.url}/${cargo.id}/delete`} color="danger" size="sm">
+                                  <FontAwesomeIcon icon="trash" />{' '}
+                                  <span className="d-none d-md-inline">
+                                    <Translate contentKey="entity.action.delete">Delete</Translate>
+                                  </span>
+                                </Button>
+                              </div>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <Table responsive>
             <thead>
               <tr>
                 <th className="hand" onClick={this.sort('id')}>
@@ -195,7 +261,7 @@ export class Cargo extends React.Component<ICargoProps, ICargoState> {
                 </tr>
               ))}
             </tbody>
-          </Table>
+          </Table> */}
         </div>
         <Row className="justify-content-center">
           <JhiPagination

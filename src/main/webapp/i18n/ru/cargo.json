@@ -2,38 +2,38 @@
   "tlsApp": {
     "cargo": {
       "home": {
-        "title": "Cargos",
-        "createLabel": "Создать новый Cargo",
-        "createOrEditLabel": "Создать или отредактировать Cargo"
+        "title": "Заявки",
+        "createLabel": "Создать новую заявку",
+        "createOrEditLabel": "Создать или отредактировать заявку"
       },
-      "created": "Новый Cargo создан с идентификатором {{ param }}",
-      "updated": "Cargo обновлен с идентификатором {{ param }}",
-      "deleted": "Cargo удален с идентификатором {{ param }}",
+      "created": "Новая заявка создан с идентификатором {{ param }}",
+      "updated": "Заявка обновлена с идентификатором {{ param }}",
+      "deleted": "Заявка удалена с идентификатором {{ param }}",
       "delete": {
-        "question": "Вы уверены что хотите удалить Cargo {{ id }}?"
+        "question": "Вы уверены что хотите удалить заявку {{ id }}?"
       },
       "detail": {
-        "title": "Cargo"
+        "title": "Заявка"
       },
-      "iDCargo": "I D Cargo",
-      "iDNakladnoy": "I D Nakladnoy",
-      "iDGruza": "I D Gruza",
-      "massa": "Massa",
-      "tekushiyPunkt": "Tekushiy Punkt",
-      "naznacheniyPunkt": "Naznacheniy Punkt",
-      "konechniyPunkt": "Konechniy Punkt",
-      "klient": "Klient",
-      "telephoneKlienta": "Telephone Klienta",
-      "dlinaPuti": "Dlina Puti",
-      "dataPribitiya": "Data Pribitiya",
-      "dataOtpravki": "Data Otpravki",
-      "prioritet": "Prioritet",
-      "vremyaPuti": "Vremya Puti",
-      "status": "Status",
-      "opisanie": "Opisanie",
-      "chrupkiy": "Chrupkiy",
-      "otvetstveniy": "Otvetstveniy",
-      "telephoneOtv": "Telephone Otv"
+      "iDCargo": "ID ЗАЯВКИ",
+      "iDNakladnoy": "ID Накладной",
+      "iDGruza": "ID Груза",
+      "massa": "Масса",
+      "tekushiyPunkt": "Текущий пункт",
+      "naznacheniyPunkt": "Пункт назначения",
+      "konechniyPunkt": "Конечный пункт",
+      "klient": "Клиент",
+      "telephoneKlienta": "Телефон клиента",
+      "dlinaPuti": "Длина пути/км.",
+      "dataPribitiya": "Дата прибытия",
+      "dataOtpravki": "Дата отправки",
+      "prioritet": "Приоритет",
+      "vremyaPuti": "Время пути/час.",
+      "status": "Статус",
+      "opisanie": "Описание",
+      "chrupkiy": "Хрупкий/да-нет",
+      "otvetstveniy": "Ответственный",
+      "telephoneOtv": "Телефон ответственного"
     }
   }
 }
