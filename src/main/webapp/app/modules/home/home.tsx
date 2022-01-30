@@ -232,8 +232,8 @@ export class Home extends React.Component<IHomeProp> {
                     <div id="audience-map" className="vector-map" />
                     <VectorMap
                       map={'world_mill'}
-                      backgroundColor="black" //change it to ocean blue: #0077be
-                      panOnDrag={true}
+                      backgroundColor="black"
+                      panOnDrag
                       containerClassName="dashboard-vector-map"
                       focusOn={{
                         x: 0.5,
