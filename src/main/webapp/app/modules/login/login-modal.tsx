@@ -55,7 +55,7 @@ class LoginModal extends React.Component<ILoginModalProps> {
                   errorMessage="Password cannot be empty!"
                 />
                 <AvGroup check inline>
-                  <Label className="form-check-label">
+                  <Label>
                     <AvInput type="checkbox" name="rememberMe" /> <Translate contentKey="login.form.rememberme">Remember me</Translate>
                   </Label>
                 </AvGroup>
@@ -70,7 +70,7 @@ class LoginModal extends React.Component<ILoginModalProps> {
             <Alert color="warning">
               <span>
                 <Translate contentKey="global.messages.info.register.noaccount">You don't have an account yet?</Translate>
-              </span>{' '}
+              </span>
               <Link to="/register">
                 <Translate contentKey="global.messages.info.register.link">Register a new account</Translate>
               </Link>
@@ -79,7 +79,7 @@ class LoginModal extends React.Component<ILoginModalProps> {
           <ModalFooter>
             <Button color="secondary" onClick={handleClose} tabIndex="1">
               <Translate contentKey="entity.action.cancel">Cancel</Translate>
-            </Button>{' '}
+            </Button>
             <Button color="primary" type="submit">
               <Translate contentKey="login.form.button">Sign in</Translate>
             </Button>

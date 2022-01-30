@@ -42,7 +42,7 @@ export class Home extends React.Component<IHomeProp> {
                     </div>
                   </div>
                 </div>
-                <h6 className="text-muted font-weight-normal">Potential growth</h6>
+                <h6 className="text-muted font-weight-normal">Потенциальный рост</h6>
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ export class Home extends React.Component<IHomeProp> {
                     </div>
                   </div>
                 </div>
-                <h6 className="text-muted font-weight-normal">Revenue current</h6>
+                <h6 className="text-muted font-weight-normal">Текущий доход</h6>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@ export class Home extends React.Component<IHomeProp> {
                     </div>
                   </div>
                 </div>
-                <h6 className="text-muted font-weight-normal">Daily Income</h6>
+                <h6 className="text-muted font-weight-normal">Ежедневный доход</h6>
               </div>
             </div>
           </div>
@@ -102,7 +102,7 @@ export class Home extends React.Component<IHomeProp> {
                     </div>
                   </div>
                 </div>
-                <h6 className="text-muted font-weight-normal">Expense current</h6>
+                <h6 className="text-muted font-weight-normal">Текущий расход</h6>
               </div>
             </div>
           </div>
@@ -111,14 +111,14 @@ export class Home extends React.Component<IHomeProp> {
           <div className="col-sm-4 grid-margin">
             <div className="card">
               <div className="card-body">
-                <h5>Revenue</h5>
+                <h5>Доход</h5>
                 <div className="row">
                   <div className="col-8 col-sm-12 col-xl-8 my-auto">
                     <div className="d-flex d-sm-block d-md-flex align-items-center">
                       <h2 className="mb-0">$32123</h2>
                       <p className="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
                     </div>
-                    <h6 className="text-muted font-weight-normal">11.38% Since last month</h6>
+                    <h6 className="text-muted font-weight-normal">11.38% С прошлого месяца</h6>
                   </div>
                   <div className="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
                     <i className="icon-lg mdi mdi-codepen text-primary ml-auto" />
@@ -130,14 +130,14 @@ export class Home extends React.Component<IHomeProp> {
           <div className="col-sm-4 grid-margin">
             <div className="card">
               <div className="card-body">
-                <h5>Sales</h5>
+                <h5>Продажи</h5>
                 <div className="row">
                   <div className="col-8 col-sm-12 col-xl-8 my-auto">
                     <div className="d-flex d-sm-block d-md-flex align-items-center">
                       <h2 className="mb-0">$45850</h2>
                       <p className="text-success ml-2 mb-0 font-weight-medium">+8.3%</p>
                     </div>
-                    <h6 className="text-muted font-weight-normal"> 9.61% Since last month</h6>
+                    <h6 className="text-muted font-weight-normal"> 9.61% С прошлого месяца</h6>
                   </div>
                   <div className="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
                     <i className="icon-lg mdi mdi-wallet-travel text-danger ml-auto" />
@@ -149,14 +149,14 @@ export class Home extends React.Component<IHomeProp> {
           <div className="col-sm-4 grid-margin">
             <div className="card">
               <div className="card-body">
-                <h5>Purchase</h5>
+                <h5>Покупка</h5>
                 <div className="row">
                   <div className="col-8 col-sm-12 col-xl-8 my-auto">
                     <div className="d-flex d-sm-block d-md-flex align-items-center">
                       <h2 className="mb-0">$2039</h2>
                       <p className="text-danger ml-2 mb-0 font-weight-medium">-2.1% </p>
                     </div>
-                    <h6 className="text-muted font-weight-normal">2.27% Since last month</h6>
+                    <h6 className="text-muted font-weight-normal">2.27% С прошлого месяца</h6>
                   </div>
                   <div className="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
                     <i className="icon-lg mdi mdi-monitor text-success ml-auto" />
@@ -170,7 +170,7 @@ export class Home extends React.Component<IHomeProp> {
           <div className="col-12">
             <div className="card">
               <div className="card-body">
-                <h4 className="card-title">Visitors by Countries</h4>
+                <h4 className="card-title">Пункты доставок</h4>
                 <div className="row">
                   <div className="col-md-5">
                     <div className="table-responsive">
@@ -180,7 +180,7 @@ export class Home extends React.Component<IHomeProp> {
                             <td>
                               <i className="flag-icon flag-icon-us" />
                             </td>
-                            <td>USA</td>
+                            <td>Симферополь</td>
                             <td className="text-right"> 1500 </td>
                             <td className="text-right font-weight-medium"> 56.35% </td>
                           </tr>
@@ -188,7 +188,7 @@ export class Home extends React.Component<IHomeProp> {
                             <td>
                               <i className="flag-icon flag-icon-de" />
                             </td>
-                            <td>Germany</td>
+                            <td>Бахчисарай</td>
                             <td className="text-right"> 800 </td>
                             <td className="text-right font-weight-medium"> 33.25% </td>
                           </tr>
@@ -196,7 +196,7 @@ export class Home extends React.Component<IHomeProp> {
                             <td>
                               <i className="flag-icon flag-icon-au" />
                             </td>
-                            <td>Australia</td>
+                            <td>Судак</td>
                             <td className="text-right"> 760 </td>
                             <td className="text-right font-weight-medium"> 15.45% </td>
                           </tr>
@@ -204,7 +204,7 @@ export class Home extends React.Component<IHomeProp> {
                             <td>
                               <i className="flag-icon flag-icon-gb" />
                             </td>
-                            <td>United Kingdom</td>
+                            <td>Старый Крым</td>
                             <td className="text-right"> 450 </td>
                             <td className="text-right font-weight-medium"> 25.00% </td>
                           </tr>
@@ -212,7 +212,7 @@ export class Home extends React.Component<IHomeProp> {
                             <td>
                               <i className="flag-icon flag-icon-ro" />
                             </td>
-                            <td>Romania</td>
+                            <td>Евпатория</td>
                             <td className="text-right"> 620 </td>
                             <td className="text-right font-weight-medium"> 10.25% </td>
                           </tr>
@@ -220,7 +220,7 @@ export class Home extends React.Component<IHomeProp> {
                             <td>
                               <i className="flag-icon flag-icon-br" />
                             </td>
-                            <td>Brasil</td>
+                            <td>Керчь</td>
                             <td className="text-right"> 230 </td>
                             <td className="text-right font-weight-medium"> 75.00% </td>
                           </tr>
