@@ -95,6 +95,9 @@ export class Cargo extends React.Component<ICargoProps, ICargoState> {
                           <th>
                             <Translate contentKey="tlsApp.cargo.status">Status</Translate> <FontAwesomeIcon icon="sort" />
                           </th>
+                          <th>
+                            <Translate contentKey="tlsApp.cargo.prioritet">Prioritet</Translate> <FontAwesomeIcon icon="sort" />
+                          </th>
                         </tr>
                       </thead>
                       <tbody>
@@ -108,7 +111,32 @@ export class Cargo extends React.Component<ICargoProps, ICargoState> {
                             <td>{moment(cargo.dataOtpravki.toString()).format('MMMM DD YYYY')}</td>
                             <td>{moment(cargo.dataPribitiya.toString()).format('MMMM DD YYYY')}</td>
                             <td>
-                              <div className={cs('badge', cargo.status === 'NOVAYA' && 'badge-outline-success')}>{cargo.status}</div>
+                              <div
+                                className={cs(
+                                  'badge',
+                                  cargo.status === 'NOVAYA' && 'badge-outline-danger',
+                                  cargo.status === 'VIPOLNYAETSA' && 'badge-outline-warning',
+                                  cargo.status === 'VIPOLNENO' && 'badge-outline-success'
+                                )}
+                              >
+                                {cargo.status === 'NOVAYA' && 'НОВАЯ'}
+                                {cargo.status === 'VIPOLNYAETSA' && 'В ПРОЦЕССЕ'}
+                                {cargo.status === 'VIPOLNENO' && 'ВЫПОЛНЕНО'}
+                              </div>
+                            </td>
+                            <td>
+                              <div
+                                className={cs(
+                                  'badge',
+                                  cargo.prioritet === 'VISOKIY' && 'badge-outline-danger',
+                                  cargo.prioritet === 'SREDNIY' && 'badge-outline-warning',
+                                  cargo.prioritet === 'NIZKIY' && 'badge-outline-success'
+                                )}
+                              >
+                                {cargo.prioritet === 'VISOKIY' && 'ВЫСОКИЙ'}
+                                {cargo.prioritet === 'SREDNIY' && 'СРЕДНИЙ'}
+                                {cargo.prioritet === 'NIZKIY' && 'НИЗКИЙ'}
+                              </div>
                             </td>
                             <td className="text-right">
                               <div className="btn-group flex-btn-group-container">

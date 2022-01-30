@@ -49,7 +49,11 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
           </Link>
         </div>
         <div className="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
-          <h1 className="navbar-nav">TLS</h1>
+          <h1 className="navbar-nav">
+            <Link className="home-btn" to="/">
+              TLS
+            </Link>
+          </h1>
           {isAuthenticated && (
             <ul className="navbar-nav w-100">
               <li className="nav-item w-100">
@@ -63,7 +67,7 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
             {isAuthenticated && (
               <Dropdown as="li" className="nav-item d-none d-lg-block">
                 <Link to="/entity/cargo" className="nav-link btn btn-success create-new-button no-caret">
-                  + Добавить заявку
+                  ЗАЯВКИ
                 </Link>
               </Dropdown>
             )}

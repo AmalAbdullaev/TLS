@@ -34,7 +34,7 @@ export class CargoDeleteDialog extends React.Component<ICargoDeleteDialogProps> 
           <Translate contentKey="entity.delete.title">Confirm delete operation</Translate>
         </ModalHeader>
         <ModalBody id="tlsApp.cargo.delete.question">
-          <Translate contentKey="tlsApp.cargo.delete.question" interpolate={{ id: cargoEntity.id }}>
+          <Translate contentKey="tlsApp.cargo.delete.question" interpolate={{ iDCargo: cargoEntity.iDCargo }}>
             Are you sure you want to delete this Cargo?
           </Translate>
         </ModalBody>

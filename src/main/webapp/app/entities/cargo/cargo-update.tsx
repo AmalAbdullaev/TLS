@@ -84,14 +84,6 @@ export class CargoUpdate extends React.Component<ICargoUpdateProps, ICargoUpdate
               <p>Loading...</p>
             ) : (
               <AvForm model={isNew ? {} : cargoEntity} onSubmit={this.saveEntity}>
-                {!isNew ? (
-                  <AvGroup>
-                    <Label for="cargo-id">
-                      <Translate contentKey="global.field.id">ID</Translate>
-                    </Label>
-                    <AvInput id="cargo-id" type="text" className="form-control" name="id" required readOnly />
-                  </AvGroup>
-                ) : null}
                 <AvGroup>
                   <Label id="iDCargoLabel" for="cargo-iDCargo">
                     <Translate contentKey="tlsApp.cargo.iDCargo">I D Cargo</Translate>
@@ -207,15 +199,9 @@ export class CargoUpdate extends React.Component<ICargoUpdateProps, ICargoUpdate
                     name="prioritet"
                     value={(!isNew && cargoEntity.prioritet) || 'VISOKIY'}
                   >
-                    <option value="VISOKIY">
-                      <Translate contentKey="tlsApp.Prioritet.VISOKIY" />
-                    </option>
-                    <option value="SREDNIY">
-                      <Translate contentKey="tlsApp.Prioritet.SREDNIY" />
-                    </option>
-                    <option value="NIZKIY">
-                      <Translate contentKey="tlsApp.Prioritet.NIZKIY" />
-                    </option>
+                    <option value="VISOKIY">ВЫСОКИЙ</option>
+                    <option value="SREDNIY">CРЕДНИЙ</option>
+                    <option value="NIZKIY">НИЗКИЙ</option>
                   </AvInput>
                 </AvGroup>
                 <AvGroup>
@@ -235,15 +221,9 @@ export class CargoUpdate extends React.Component<ICargoUpdateProps, ICargoUpdate
                     name="status"
                     value={(!isNew && cargoEntity.status) || 'NOVAYA'}
                   >
-                    <option value="NOVAYA">
-                      <Translate contentKey="tlsApp.Status.NOVAYA" />
-                    </option>
-                    <option value="VIPOLNYAETSA">
-                      <Translate contentKey="tlsApp.Status.VIPOLNYAETSA" />
-                    </option>
-                    <option value="VIPOLNENO">
-                      <Translate contentKey="tlsApp.Status.VIPOLNENO" />
-                    </option>
+                    <option value="NOVAYA">НОВАЯ</option>
+                    <option value="VIPOLNYAETSA">В ПРОЦЕССЕ</option>
+                    <option value="VIPOLNENO">ВЫПОЛНЕНО</option>
                   </AvInput>
                 </AvGroup>
                 <AvGroup>

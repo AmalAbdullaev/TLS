@@ -2,9 +2,9 @@
   "tlsApp": {
     "Prioritet": {
       "null": "",
-      "VISOKIY": "VISOKIY",
-      "SREDNIY": "SREDNIY",
-      "NIZKIY": "NIZKIY"
+      "VISOKIY": "ВЫСОКИЙ",
+      "SREDNIY": "СРЕДНИЙ",
+      "NIZKIY": "НИЗКИЙ"
     }
   }
 }

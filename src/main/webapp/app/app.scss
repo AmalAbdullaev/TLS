@@ -26,3 +26,18 @@ input {
 #account-menu {
   width: 150px;
 }
+
+#chrupkiyLabel {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+select.form-control {
+  color: white !important;
+}
+
+.home-btn {
+  &:hover {
+    text-decoration: none;
+  }
+}
