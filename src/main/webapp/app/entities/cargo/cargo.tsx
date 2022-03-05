@@ -108,8 +108,8 @@ export class Cargo extends React.Component<ICargoProps, ICargoState> {
                             <td>{cargo.iDGruza}</td>
                             <td>{cargo.massa}</td>
                             <td>{cargo.tekushiyPunkt}</td>
-                            <td>{moment(cargo.dataOtpravki.toString()).format('MMMM DD YYYY')}</td>
-                            <td>{moment(cargo.dataPribitiya.toString()).format('MMMM DD YYYY')}</td>
+                            <td>{cargo.dataOtpravki && moment(cargo.dataOtpravki.toString()).format('MMMM DD YYYY')}</td>
+                            <td>{cargo.dataOtpravki && moment(cargo.dataPribitiya.toString()).format('MMMM DD YYYY')}</td>
                             <td>
                               <div
                                 className={cs(
